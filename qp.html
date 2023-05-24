@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content="with=device-width, initial-scale=0">
+        <title>Books</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="syllabus.html">Syllabus</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="student_area.html">Notes</a></li>
+                        <li><a href="qp.html">Question Papers</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        </section>
+
+        <!-- STUDENT AREA -->
+        <section class="about">
+            <h1>Question Paper</h1>
+            <div class="row">
+                <div class="about-col">
+                    <a href="qp_ece.html">
+                    <img src="images/ece.jpeg">
+                    <div class="layer">
+                        <h3>Electronics & Communication</h3>
+                    </div></a>
+                </div>
+                <div class="about-col">
+                    <a href="qp_cse.html">
+                    <img src="images/cse.jpeg">
+                    <div class="layer">
+                        <h3>Computer Science</h3>
+                    </div></a>
+                </div>
+                <div class="about-col">
+                    <a href="qp_ee.html">
+                    <img src="images/ee.jpeg">
+                    <div class="layer">
+                        <h3>Electrical</h3>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+
+            <div class="row">
+                <div class="about-col">
+                    <a href="qp_ce.html">
+                    <img src="images/civil.png">
+                    <div class="layer">
+                        <h3>Civil</h3>
+                    </div></a>
+                </div>
+                <div class="about-col">
+                    <a href="qp_it.html">
+                    <img src="images/it.jpeg">
+                    <div class="layer">
+                        <h3>Information Technology</h3>
+                    </div></a>
+                </div>
+                <div class="about-col">
+                    <img src="images/wait.png">
+                    <div class="layer">
+                        <h3>Coming Soon...</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+
+        <!-- FOOTER -->
+        <section class="footer">
+            <h2>Join Us</h2>
+            <div class="social">
+            <img src="images/facebook.png" height="40" width="40">
+            <img src="images/instagram.png" height="40" width="40">
+            <img src="images/telegram.png" height="40" width="40">
+            <img src="images/linkedin.png" height="40" width="40">
+        </div>
+        </section>
+
+
+
+
+
+<!-- JS for Toggle Menu -->
+     <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+     </script>   
+    </body>
+</html>
